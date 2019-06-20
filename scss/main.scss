@@ -1,5 +1,74 @@
-$primary-color: #444;
+@import "config";
+@import "hidden";
+@import "about";
+@import "programs";
+@import "contact";
 
-body {
-    background: $primary-color;
+
+
+.header {
+    background-image: linear-gradient(to bottom,  rgba(224, 214, 214, .9), rgba(224, 214, 214, .7) 90%),
+                      url('../img/children_ground.jpeg');
+    background-color: $primary-color;
+    background-size: cover;
+    // background-position-y: 25%;
+    // background-position-x: 45%;
+    background-position: bottom;
+    border-top: 2px solid $light-text-color;
+    border-bottom: 2px solid $light-text-color;
+    height: calc(100vh - 100px);
+    position: relative;
 }
+
+.heading-primary__container {
+    left: 50%;
+    padding: 5rem;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    width: 100%;
+    
+}
+
+.heading-primary__main--1,
+.heading-primary__main--2 {
+    
+    color: $purple-color;
+    display: block;
+    font-size: 9rem;
+    font-weight: 700;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    // text-shadow: 1px 1px 2px white;
+    
+    
+}
+
+.heading-primary__sub,
+.heading-primary__determiner {
+    color: #222;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    // text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    background-color: $light-text-color;
+}
+
+.footer {
+    background-color: $primary-color;
+    color: $light-text-color;
+    font-size: 1.3rem;
+    height: 1.5rem;
+    letter-spacing: .2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+@import "mobile";
