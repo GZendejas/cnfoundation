@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Carrie Nakamura Foundation</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="programs.html">PROGRAMS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <span class="open-slide">
+            <a href="javascript:void(0)" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#42c2f4" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#42c2f4" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#42c2f4" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+    </nav>
+    <div id="side-menu" class="side-nav">
+        <a href="javascript:void(0)" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="programs.html">PROGRAMS</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <div id="main-page">
+        
+        <header class="programs-header">
+            <span class="programs-header__text">Lend a helping hand</span>
+        </header>
+        <h2 class="programs-heading">CARE Programs</h2>
+        <div class="programs-wrapper">
+            <section class="skate-section">
+                <h3 class="skate-section__heading">We-Skate</h3>
+                <div class="skate-section__wrapper">
+                    <div class="skate-section__text-box">
+                        <p class="skate-section__paragraph">WE-SKATE provides funding for building skate parks in several local cities. To date, the porgram has funded several parks in San Jose, Oakland, and San Leandro. Our goal is to provide children with a healthy outlet in high crime neighborhoods.</p>
+                        <p class="skate-section__paragraph">Aside from the initial funding, WE-SKATE also oversees planning and construction of the parks. We work closely with city officials throughout the Bay Area to minimize project time. We also work with law enforcement to ensure safety and frequent patrols during park hours.</p>
+                    </div>
+                    <img class="skate-section__img" src="../dist/img/skatepark.jpeg" alt="students hiking">
+                </div>  
+            </section>
+            <section class="hike-section">
+                <h3 class="hike-section__heading">Hike Bay Area!</h3>
+                <div class="hike-section__wrapper">
+                    <img class="hike-section__img" src="../dist/img/hike_shadows.jpeg" alt="students hiking">
+                    <div class="hike-section__text-box">
+                        <p class="hike-section__paragraph">Hike Bay Area! is a program for Bay Area low-income high school students. Our aim is to introduce students to the great outdoors trough hiking. It's an easy way to keep students physically active, while introducing them to new sorroundings.</p>
+                        <p class="hike-section__paragraph">We organize hiking trips for students during the spring and summer. The program starts with easy hiking trails, and gradually progresses to more difficult trails throughout the length of the program. We also work with county parks departments to provide the students with guided informational tours, allowing them to learn about wild animals and plants a few miles from their own communities.</p>
+                    </div>
+                </div>  
+            </section>
+            <section class="run-section">
+                <h3 class="run-section__heading">CARE Foundation 5k</h3>
+                <div class="run-section__wrapper">
+                    <div class="run-section__text-box">
+                        <p class="run-section__paragraph">Our annual CARE Foundation 5k raises funds for children's classrooms in poverty-stricken areas around the world. Our 2018 5k run raised $1 million, and our 2019 run is projected to surpass the previous year.</p>
+                        <p class="run-section__paragraph">The event is held every year in south San Jose. There are cash prizes for top 5 runners in each gender category. Please check back for more information in September.</p>
+                    </div>
+                    <img class="run-section__img" src="../dist/img/run_tunnel.jpeg" alt="students hiking">
+                </div>  
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        Copyright &copy; 2019 Guillermo Zendejas
+    </footer>
+   
+    <script src="js/main.js"></script>
+</body>
+</html>
